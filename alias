@@ -14,8 +14,6 @@ alias dcstop="docker-compose stop $1"
 alias dclogs="docker-compose logs $1"
 alias dcexec="docker-compose exec $1 $2"
 alias lgrep="ls | grep $1"
-alias gunwip='git log -n 1 | grep -q -c "\-\-wip\-\-" && git reset HEAD~1'
-alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign -m "--wip-- [skip ci]"'
 alias dkill="docker kill $(docker ps -q)"
 # Show git branch name
 force_color_prompt=yes
